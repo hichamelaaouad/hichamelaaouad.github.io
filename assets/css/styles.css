@@ -320,6 +320,18 @@ img {
 .skills__ux {
   width: 85%;
 }
+.skills__wire {
+  width: 70%;
+}
+.skills__net {
+  width: 55%;
+}
+.skills__burp {
+  width: 65%;
+}
+.skills__java {
+  width: 70%;
+}
 .skills__img {
   border-radius: 0.5rem;
 }
