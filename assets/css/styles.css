@@ -253,6 +253,22 @@ img {
 }
 
 /* ===== SKILLS =====*/
+.metacls {
+  width: 29px;
+  height: 35px;
+}
+.burpcls {
+  width: 30px;
+  height: 30px;
+}
+.netcls {
+  width: 35px;
+  height: 35px;
+}
+.wirecls {
+  width: 30px;
+  height: 30px;
+}
 .skills__container {
   row-gap: 2rem;
   text-align: center;
@@ -307,22 +323,28 @@ img {
 .skills__img {
   border-radius: 0.5rem;
 }
+.img_icon {
+  color: #4070f4;
+}
 
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
 }
-.work__img {
+/*.work__img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
-}
+}*/
 .work__img img {
   transition: 1s;
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 .work__img img:hover {
   transform: scale(1.1);
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  overflow: hidden;
 }
 
 /* ===== CONTACT =====*/
@@ -452,4 +474,15 @@ img {
   .home__img {
     right: 10%;
   }
+}
+.img11 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/assets/img/rest_website.png);
+  height: 100vh;
+  background-size: cover; /* tell the browser that we need to see all the image*/
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: -9px;
+  margin-left: -8px;
+  margin-right: -9px;
 }

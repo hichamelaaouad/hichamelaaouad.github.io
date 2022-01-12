@@ -11,6 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>HICHAM EL AAOUAD</title>
   </head>
@@ -34,7 +35,10 @@
               <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">My Videos</a>
+              <a href="#work" class="nav__link">Certifacts</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Videos</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Projects</a>
@@ -64,7 +68,9 @@
           <a href="" class="home__social-icon"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="" class="home__social-icon"
+          <a
+            href="https://www.youtube.com/c/HichamElAaouadd"
+            class="home__social-icon"
             ><i class="bx bxl-youtube"></i
           ></a>
           <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
@@ -114,7 +120,7 @@
               <div class="skills__names">
                 <i class="bx bxl-html5 skills__icon"></i>
                 <i class="bx bxl-CSS3 skills__icon"></i>
-                <span class="skills__name">HTML5-CSS3</span>
+                <span class="skills__name">HTML5-CSS3-Bootstrap</span>
               </div>
               <div class="skills__bar skills__html"></div>
               <div>
@@ -123,21 +129,8 @@
             </div>
             <div class="skills__data">
               <div class="skills__names">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfVJREFUSEvFloExBjEQhd9fAR2gAjpAB1SAClABKkAFqIAOUIEW6IAKmM9kTS6zSTbH+Hfm5n6S27f79mU3Cy3JFkvC1VzgVUkHKeg7Se+jCcwBPpR0KQlwDNATSQQQthHgHUlnknh79iTpQhLvrkWA1xMgmUbsNgXw2trcAobK40Sj0RoBNvqvJF3X6l8D3kt1JFvPnjOHBLVd2UfWp5IeynUPmEjJ1DNqCJUljQRIKdCAZ3xzlC94wJ/Olx+SYKEnnK20Z8XxMcGKAu8GQA0L8Je/AEYgnFMzE50dK1jIRQTwvaRSH8MZb2Q1BfRREs5zA3w/1TgPslrWHtWoN28YOKVrtQw9IL5NSfnvoYxLYDKrHR0LBvWyDyXz2O9JxxvNOApMxhwt+jff3EhCoD82CsxZxUnLGBo8iIs3QaCJIaoByMXF39BnI9ECIDPqT/Mp12zPMHB5nHBEM6FmZASVeWPh/wS3VtAyDMz3S2kgAJMZ5zTSMr3mgY9uxl4NjbXzpNRySNhViHVvhKKByTxvjUWEUtbJAiBzu2cBVLuVvCXRhcZi3pNRKo83bXrdi8BhwLXo1QcHtWNSOoZW9s+++pQOoROHtZZJe2W9J8Bvv5GMywAQCTQa/QwCyoEowzYHGOcIylQK4L9c6MNZtTbOzfjX4F/eO3EfF80B4QAAAABJRU5ErkJggg=="
-                />
-
-                <span class="skills__name">C</span>
-              </div>
-              <div class="skills__bar skills__css"></div>
-              <div>
-                <span class="skills__percentage">85%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
                 <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">JAVASCRIPT</span>
+                <span class="skills__name">JAVASCRIPT-Angular js</span>
               </div>
               <div class="skills__bar skills__js"></div>
               <div>
@@ -146,13 +139,33 @@
             </div>
             <div class="skills__data">
               <div class="skills__names">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAapJREFUSEvVluExBEEQhb+LgAwQASJABjIgBCJABIRABIgAESACQiAC6qva2XJ7M7N9N1t1pauu7sfOzOt+/V7PzFhTzNaEy78DPgR+Ora+gbdlmVum4mPgAtgrgDwAV9EkosBW+ATcAdvAQQH8C9gHPscYiAJfdtW6PiVROvscuJka+BnYrNAtnnSbaDWiFZ8C/oaRo7wZWDHtjiSeq0xge7zV7VUXCz3PVSyVCqmk3jEWBVYHiY2s4HLAt8DJ2OmV70Ngl1r1XKtywGa40QB8BJh8ojodNYc1BJbe1wbQd0BtfGTO0N/9hBsC1zyaRqOWyoUCUhtOsJw+ZKLfGwV+7HpUG5kmY+KlqAKXqNZWCmRVpZtMlWoXDMVl3/TrfUPvbZM27SNip5euN9K8aixMs9IAUX3JDq3A7lfpMlmt2I/SouH9V61ehbmKFUwtBMs+EqKXRLoWI1Q3XxJ/QcaAtZvVOWonBT4DrgMe9R02KXDqdWmG20crdoDsTPn0sVgFJuUePrwA9Knj0O+hF2dUXDmWZSExERHd3JoW4KXBIj5uOjSyeW0V/wKOqFUf7Z9RBQAAAABJRU5ErkJggg=="
-                />
-
-                <span class="skills__name"> PYTHON</span>
+                <i class="bx bxl-nodejs skills__icon"></i>
+                <span class="skills__name">Nodejs-Expressejs</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M9.37,17.51c-3.09.86,1.87,2.64,5.8,1a7.18,7.18,0,0,1-1.1-.54,11.59,11.59,0,0,1-4.16.18C8.6,18,9.37,17.51,9.37,17.51Z"></path><path d="M14.7,15.83a16.27,16.27,0,0,1-5.36.26c-1.31-.14-.45-.77-.45-.77-3.4,1.12,1.89,2.4,6.64,1A2.25,2.25,0,0,1,14.7,15.83Z"></path><path d="M16.52,6.1s-6.87,1.71-3.59,5.49a1.47,1.47,0,0,1-.25,2.12s2.46-1.27,1.33-2.86S12.15,8.63,16.52,6.1Z"></path><path d="M18.13,19.14s.56.46-.63.82c-2.27.69-9.43.9-11.42,0-.72-.31.62-.74,1-.83a2.54,2.54,0,0,1,.69-.08c-.8-.56-5.15,1.1-2.21,1.58C13.61,22,20.2,20.07,18.13,19.14Z"></path><path d="M15.37,14.26a7,7,0,0,1,.92-.49s-1.51.27-3,.4a28.11,28.11,0,0,1-4.82.05C6.09,13.91,9.74,13,9.74,13a6.81,6.81,0,0,0-3.16.75C4.52,14.78,11.67,15.23,15.37,14.26Z"></path><path d="M16.28,16.7a.39.39,0,0,1-.08.09c5-1.32,3.18-4.65.78-3.81a.71.71,0,0,0-.33.25s.14-.05.43-.12C18.3,12.86,20,14.74,16.28,16.7Z"></path><path d="M12,13c-.74-1.67-3.26-3.14,0-5.71C16.09,4.08,14,2,14,2c.84,3.31-3,4.31-4.34,6.37C8.73,9.78,10.13,11.29,12,13Z"></path><path d="M16.41,21.32a29.75,29.75,0,0,1-9.14.14s.46.38,2.84.53c3.61.23,9.15-.12,9.29-1.83C19.4,20.16,19.14,20.8,16.41,21.32Z"></path></svg>
+                <span class="skills__name">&nbsp &nbsp  JAVA OOP</span>
               </div>
               <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <img class="img_icon"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAapJREFUSEvVluExBEEQhb+LgAwQASJABjIgBCJABIRABIgAESACQiAC6qva2XJ7M7N9N1t1pauu7sfOzOt+/V7PzFhTzNaEy78DPgR+Ora+gbdlmVum4mPgAtgrgDwAV9EkosBW+ATcAdvAQQH8C9gHPscYiAJfdtW6PiVROvscuJka+BnYrNAtnnSbaDWiFZ8C/oaRo7wZWDHtjiSeq0xge7zV7VUXCz3PVSyVCqmk3jEWBVYHiY2s4HLAt8DJ2OmV70Ngl1r1XKtywGa40QB8BJh8ojodNYc1BJbe1wbQd0BtfGTO0N/9hBsC1zyaRqOWyoUCUhtOsJw+ZKLfGwV+7HpUG5kmY+KlqAKXqNZWCmRVpZtMlWoXDMVl3/TrfUPvbZM27SNip5euN9K8aixMs9IAUX3JDq3A7lfpMlmt2I/SouH9V61ehbmKFUwtBMs+EqKXRLoWI1Q3XxJ/QcaAtZvVOWonBT4DrgMe9R02KXDqdWmG20crdoDsTPn0sVgFJuUePrwA9Knj0O+hF2dUXDmWZSExERHd3JoW4KXBIj5uOjSyeW0V/wKOqFUf7Z9RBQAAAABJRU5ErkJggg=="
+                />
+
+                <span class="skills__name">&nbsp &nbsp &nbsp PYTHON</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
               <div>
                 <span class="skills__percentage">85%</span>
               </div>
@@ -160,7 +173,63 @@
           </div>
 
           <div>
-            <img src="assets/img/video1.png" alt="" class="skills__img" />
+            <p class="skills__text">
+              Skills that are related</br> to cyber security and
+              Hacking.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <img
+                  src="./assets//img/wireshark.png" class="wirecls"
+                />
+
+                <span class="skills__name">&nbsp &nbsp &nbsp WIRESHARK</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <img
+                class="netcls"
+                    src="./assets/img/net.ico"
+                />
+
+                <span class="skills__name">&nbsp &nbsp &nbsp NETWORKING</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <img class="burpcls"
+                    src="./assets/img/burp.ico"
+                />
+
+                <span class="skills__name">&nbsp &nbsp &nbsp BURP SUIT</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <img
+                  src="./assets/img/meta.png" class="metacls"
+                />
+
+                <span class="skills__name">&nbsp &nbsp &nbsp METASPLOIT</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -172,12 +241,12 @@
         <div class="work__container bd-grid">
           <div class="work__img">
             <a href="https://youtu.be/mLF153YbRMo"
-              ><img src="assets/img/video1.png" alt=""
+              ><img src="assets/img/last_THUMBNILS.png" alt=""
             /></a>
           </div>
           <div class="work__img">
             <a href="https://www.youtube.com/watch?v=08el4Z43uYk&t=85s"
-              ><img src="assets/img/bounty.jfif" alt=""
+              ><img src="assets/img/video1.png" alt=""
             /></a>
           </div>
           <div class="work__img">
@@ -206,29 +275,31 @@
       <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
         <h2 class="section-title">works</h2>
-
         <div class="work__container bd-grid">
           <div class="work__img">
             <a href="https://www.youtube.com/c/HichamElAaouadd"
-              ><img src="assets/img/camion.png" alt=""
+              ><img src="assets/img/alwan.png" alt=""
             /></a>
           </div>
           <div class="work__img">
-            <img src="assets/img/piano.png" alt="" />
+            <img src="assets/img/rest_website.png" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/photographer.png" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/amazing.png" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/camion.png" alt="" />
           </div>
           <div class="work__img">
             <img src="assets/img/rst_mana_sys.png" alt="" />
           </div>
-          <div class="work__img">
-            <img src="assets/img/home_rem.png" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/stage.png" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/awasim.png" alt="" />
-          </div>
         </div>
+            
+         
+        
       </section>
     </main>
 
